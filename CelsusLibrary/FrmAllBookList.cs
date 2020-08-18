@@ -1,4 +1,6 @@
-﻿using System;
+﻿using CelsusLibrary.Data;
+using CelsusLibrary.Utility;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -16,10 +18,10 @@ namespace CelsusLibrary
         {
             InitializeComponent();
         }
-
-        private void radioButton1_CheckedChanged(object sender, EventArgs e)
+        AddBook sort = new AddBook();
+        private void FrmAllBookList_Load(object sender, EventArgs e)
         {
-
+            grdAllBooksList.DataSource = sort.Filter(null,true);
         }
 
         private void radioButton2_CheckedChanged(object sender, EventArgs e)
@@ -28,6 +30,16 @@ namespace CelsusLibrary
         }
 
         private void radioButton3_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void grdAllBooksList_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void btnKitapAdi(object sender, EventArgs e)
         {
 
         }

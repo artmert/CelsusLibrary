@@ -24,16 +24,18 @@ namespace CelsusLibrary
 
         }
 
+        private void KitapDüzenleToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FrmEditBook b = new FrmEditBook();
+            b.ShowDialog();
+        }
+
         private void TümKitaplarToolStripMenuItem_Click(object sender, EventArgs e)
         {
             FrmAllBookList b = new FrmAllBookList();
             b.ShowDialog();
         }
 
-        private void KitapDüzenleToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-           
-        }
 
         private void OkuyucularToolStripMenuItem_Click(object sender, EventArgs e)
         {
@@ -41,5 +43,14 @@ namespace CelsusLibrary
 
         }
 
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pictureBox1_Click_1(object sender, EventArgs e)
+        {
+
+        }
     }
 }
